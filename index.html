@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>stream测试</title>
+  <!-- <script type="module" src="index.js"></script> -->
+</head>
+
+<body>
+  <script type="module">
+    import { GEOJSONLoader } from '/index.js';
+    let loader = new GEOJSONLoader();
+    loader.load('http://127.0.0.1:8088/erdiao.geojson').then((res) => {
+      console.log(res);
+    });
+  </script>
+</body>
+
+</html>
